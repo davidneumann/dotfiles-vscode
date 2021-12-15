@@ -1,0 +1,155 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.largeFileOptimizations": false,
+
+    //Vim stuff good luck
+    "vim.handleKeys":{
+        "<C-t>": false, //Command t
+        "<C-.>": false //Open code actions
+    },
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindings": [
+        // Toggle sidebar
+        {
+            "before": ["leader", "b"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+
+        //Tab navigation
+        {
+            "before": ["leader", "1"],
+            "commands": [
+                "workbench.action.openEditorAtIndex1",
+            ]
+        },
+        {
+            "before": ["leader", "2"],
+            "commands": [
+                "workbench.action.openEditorAtIndex2",
+            ]
+        },
+        {
+            "before": ["leader", "3"],
+            "commands": [
+                "workbench.action.openEditorAtIndex3",
+            ]
+        },
+        {
+            "before": ["leader", "4"],
+            "commands": [
+                "workbench.action.openEditorAtIndex4",
+            ]
+        },
+        {
+            "before": ["leader", "5"],
+            "commands": [
+                "workbench.action.openEditorAtIndex5",
+            ]
+        },
+        {
+            "before": ["leader", "6"],
+            "commands": [
+                "workbench.action.openEditorAtIndex6",
+            ]
+        },
+        {
+            "before": ["leader", "7"],
+            "commands": [
+                "workbench.action.openEditorAtIndex7",
+            ]
+        },
+        {
+            "before": ["leader", "8"],
+            "commands": [
+                "workbench.action.openEditorAtIndex8",
+            ]
+        },
+        {
+            "before": ["leader", "9"],
+            "commands": [
+                "workbench.action.openEditorAtIndex9",
+            ]
+        },
+
+        //Dialog operations
+        {
+            "before": ["leader", "o"],
+            "commands": ["workbench.action.files.openFile"]
+        },
+
+        //LSP stuff
+        {
+            "before": ["leader", "i"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+
+        {
+            "before": ["leader", "r"],
+            "commands": ["editor.action.rename"]
+        },
+
+        {
+            "before": ["leader", "K" ],
+            "commands": ["editor.action.showHover"]
+        },
+
+        {
+            "before": ["g", "["],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["g", "]"],
+            "commands": ["editor.action.marker.prev"]
+        },
+
+        //Vimspector / debugging
+        // Start
+        {
+            "before": ["leader", "d", "d"],
+            "commands": ["workbench.action.debug.start"]
+        },
+        // Reset / Stop
+        {
+            "before": ["leader", "d", "x"],
+            "commands": ["workbench.action.debug.stop"]
+        },
+        // Continue
+        {
+            "before": ["leader", "d", "space"],
+            "commands": ["workbench.action.debug.continue"]
+        },
+        // Step into
+        {
+            "before": ["leader", "d", "l"],
+            "commands": ["workbench.action.debug.stepInto"]
+        },
+        // Step out
+        {
+            "before": ["leader", "d", "k"],
+            "commands": ["workbench.action.debug.stepOut"]
+        },
+        // Step over
+        {
+            "before": ["leader", "d", "j"],
+            "commands": ["workbench.action.debug.stepOver"]
+        },
+        // Toggle breakpoint
+        {
+            "before": ["leader", "d", "b", "p"],
+            "commands": ["editor.debug.action.toggleBreakpoint"]
+        },
+        // Add/Toggle conditional breakpoint
+        {
+            "before": ["leader", "d", "c", "b", "p"],
+            "commands": ["editor.debug.action.conditionalBreakpoint"]
+        },
+        // Run to cursor
+        {
+            "before": ["leader", "d", "r", "c"],
+            "commands": ["editor.debug.action.runToCursor"]
+        }
+    ],
+
+
+}
