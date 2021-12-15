@@ -1,0 +1,15 @@
+bungcip.better-toml
+dunstontc.viml
+matklad.rust-analyzer
+mechatroner.rainbow-csv
+ms-dotnettools.csharp
+ms-vscode-remote.remote-wsl
+ms-vscode.hexeditor
+ms-vscode.mono-debug
+ms-vscode.powershell
+mshr-h.veriloghdl
+neikeq.godot-csharp-vscode
+rust-lang.rust
+slevesque.vscode-autohotkey
+vadimcn.vscode-lldb
+vscodevim.vim
