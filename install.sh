@@ -16,5 +16,4 @@ ln -s "$pwd/settings.json" $targetPath
 #extensions
 while read p; do
   code --install-extension $extension
-  echo "$p"
 done <extensions.txt
