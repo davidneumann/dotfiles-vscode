@@ -150,6 +150,9 @@
             "commands": ["editor.debug.action.runToCursor"]
         }
     ],
+    "vim.useSystemClipboard": true,
+    "vva.trustedDomain": true,
+    "editor.lineNumbers": "relative",
 
 
 }
