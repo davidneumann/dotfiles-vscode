@@ -1,30 +1,15 @@
 #Base settings
-echo "Symlinking your settings.json to this repos settings.json"
-targetPath="$HOME/.config/Code/User/settings.json"
+echo "Symlinking all .json files for VS Code"
+targetDir="$HOME/.config/Code/User/"
 
 if [[ $OSTYPE == 'darwin'* ]]; then
-  targetPath="$HOME/Library/Application Support/Code/User/settings.json"
+  targetDir="$HOME/Library/Application Support/Code/User/"
 fi
 
-if [ -e "$targetPath" ]; then
-  backupPath="$targetPath.backup"
-  if [ -e "$backupPath" ]; then
-    rm "$backupPath"
+find . -name "*.json" -print0 | while read -d $'\0' file
+do
+  if [ -e "$targetDir/$file" ]; then
+    rm "$targetDir/$file"
   fi
-  cp "$targetPath" "$backupPath"
-  rm "$targetPath"
-fi
-ln -s "$(pwd)/settings.json" "$targetPath"
-
-#extensions
-echo "Installing all extensions from extensions.txt"
-while read extension; do
-  echo "Installing $extension"
-  code --install-extension "$extension" > /dev/null
-done <extensions.txt
-
-#macos settings
-if [[ $OSTYPE == 'darwin'* ]]; then
-  echo "Enabling key repeat for macos"
-  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-fi
+  ln -s "$(pwd)/$file" "$targetDir$file"
+done
