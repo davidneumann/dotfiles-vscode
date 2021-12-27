@@ -155,4 +155,7 @@
     "editor.lineNumbers": "relative",
     "workbench.editor.limit.enabled": true,
 
+    "terminal.external.osxExec": "iTerm.app",
+    //"terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
 }
