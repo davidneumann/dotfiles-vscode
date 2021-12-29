@@ -13,3 +13,16 @@ do
   fi
   ln -s "$(pwd)/$file" "$targetDir$file"
 done
+
+#extensions
+echo "Installing all extensions from extensions.txt"
+while read extension; do
+  echo "Installing $extension"
+  code --install-extension "$extension" > /dev/null
+done <extensions.txt
+
+#macos settings
+if [[ $OSTYPE == 'darwin'* ]]; then
+  echo "Enabling key repeat for macos"
+  defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+fi
