@@ -159,5 +159,10 @@
     //"terminal.integrated.shell.osx": "/bin/bash",
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
 
-    "C_Cpp.autocompleteAddParentheses":true,
+    "C_Cpp.autocompleteAddParentheses": true,
+
+    "editor.rulers": [80,140],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#521e1e"
+    },
 }
