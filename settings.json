@@ -165,4 +165,5 @@
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#521e1e"
     },
+    "workbench.iconTheme": "material-icon-theme",
 }

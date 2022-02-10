@@ -1,6 +1,9 @@
 bungcip.better-toml
+christian-kohler.path-intellisense
 cschlosser.doxdocgen
+dbaeumer.vscode-eslint
 dunstontc.viml
+esbenp.prettier-vscode
 jeff-hykin.better-cpp-syntax
 kaisun.vscodevimacademy
 matklad.rust-analyzer
@@ -22,6 +25,7 @@ ms-vscode.mono-debug
 ms-vscode.powershell
 mshr-h.veriloghdl
 neikeq.godot-csharp-vscode
+PKief.material-icon-theme
 rust-lang.rust
 SirTori.indenticator
 slevesque.vscode-autohotkey
