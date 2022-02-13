@@ -2,6 +2,7 @@
     "files.trimTrailingWhitespace": true,
     "security.workspace.trust.untrustedFiles": "open",
     "editor.largeFileOptimizations": false,
+    "editor.formatOnSave": true,
 
     //Vim stuff good luck
     "vim.handleKeys":{
@@ -166,4 +167,7 @@
         "editorRuler.foreground": "#521e1e"
     },
     "workbench.iconTheme": "material-icon-theme",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
