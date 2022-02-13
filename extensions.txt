@@ -30,6 +30,7 @@ PKief.material-icon-theme
 rust-lang.rust
 SirTori.indenticator
 slevesque.vscode-autohotkey
+streetsidesoftware.code-spell-checker
 twxs.cmake
 vadimcn.vscode-lldb
 vintharas.learn-vim
