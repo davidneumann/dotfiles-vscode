@@ -1,6 +1,7 @@
 bungcip.better-toml
 christian-kohler.path-intellisense
 cschlosser.doxdocgen
+Danny1461.css-semicolon-fix
 dbaeumer.vscode-eslint
 dunstontc.viml
 esbenp.prettier-vscode
