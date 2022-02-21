@@ -3,12 +3,14 @@ christian-kohler.path-intellisense
 cschlosser.doxdocgen
 Danny1461.css-semicolon-fix
 dbaeumer.vscode-eslint
+dsznajder.es7-react-js-snippets
 dunstontc.viml
 esbenp.prettier-vscode
 jeff-hykin.better-cpp-syntax
 kaisun.vscodevimacademy
 matklad.rust-analyzer
 mechatroner.rainbow-csv
+mike-co.import-sorter
 ms-dotnettools.csharp
 ms-python.python
 ms-python.vscode-pylance
@@ -25,8 +27,10 @@ ms-vscode.hexeditor
 ms-vscode.mono-debug
 ms-vscode.powershell
 mshr-h.veriloghdl
+msjsdiag.vscode-react-native
 neikeq.godot-csharp-vscode
 PKief.material-icon-theme
+redguardtoo.matchit
 rust-lang.rust
 SirTori.indenticator
 slevesque.vscode-autohotkey
