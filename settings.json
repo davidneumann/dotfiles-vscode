@@ -85,6 +85,10 @@
       "before": ["g", "]"],
       "commands": ["editor.action.marker.prev"]
     },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
 
     //Vimspector / debugging
     // Start
@@ -153,7 +157,7 @@
 
   "terminal.external.osxExec": "iTerm.app",
   //"terminal.integrated.shell.osx": "/bin/bash",
-  "terminal.integrated.fontFamily": "MesloLGM Nerd Font Mono",
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
 
   "C_Cpp.autocompleteAddParentheses": true,
 
@@ -169,5 +173,13 @@
   "explorer.confirmDelete": false,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "liveshare.presence": true,
+  "customizeUI.stylesheet": {
+    ".monaco-workbench .part.statusbar>.items-container": "transform: scale(1.25); padding-left: 175px"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
