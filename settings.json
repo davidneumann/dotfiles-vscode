@@ -181,5 +181,26 @@
   "customizeUI.stylesheet": {
     ".monaco-workbench .part.statusbar>.items-container": "transform: scale(1.25); padding-left: 175px"
   },
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.userWords": [
+    "Firestore",
+    "keras",
+    "Lemmatize",
+    "Lemmatizer",
+    "LSTM",
+    "nltk",
+    "onet",
+    "Punct",
+    "redhawkdavid",
+    "stopwords"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.views.branches.branches.layout": "list"
 }
