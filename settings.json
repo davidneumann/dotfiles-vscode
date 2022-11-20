@@ -163,7 +163,13 @@
 
   "editor.rulers": [80, 140],
   "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#521e1e"
+    "editorRuler.foreground": "#521e1e",
+
+    // will change the color of three dots to red
+    "editorHint.foreground": "#ff0000",
+
+    // will underline the entire word with dots in your chosen color
+    "editorHint.border": "#00ff66"
   },
   "workbench.iconTheme": "material-icon-theme",
   "[javascript]": {
@@ -225,6 +231,17 @@
   "[mjml]": {
     "editor.defaultFormatter": "mjmlio.vscode-mjml"
   },
-  "cSpell.enabled": true,
-  "cSpell.enableFiletypes": ["mjml"]
+  "cSpell.enableFiletypes": ["mjml"],
+  "editor.guides.highlightActiveIndentation": "always",
+  "cSpell.diagnosticLevel": "Hint",
+
+  "editor.tokenColorCustomizations": {
+    "functions": "#ffb454",
+    "strings": "#aad94c",
+    "comments": "#acb6bf8c",
+    "variables": "#bfbdb6"
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": { "variable": "#bfbdb6" }
+  }
 }
