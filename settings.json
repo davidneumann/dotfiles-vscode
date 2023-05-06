@@ -11,6 +11,23 @@
   },
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
+    //Use VSCode Undo instead of vim undo
+    {
+      "before": ["u"],
+      "after": [],
+      "commands": ["undo"]
+    },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": ["redo"]
+    },
+    //Paste without yanking
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    },
+
     // Toggle sidebar
     {
       "before": ["leader", "b"],
@@ -199,6 +216,7 @@
     "Datas",
     "employflorida",
     "Firestore",
+    "fout",
     "keras",
     "Lemmatize",
     "Lemmatizer",
@@ -226,7 +244,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": false
   },
   "[mjml]": {
     "editor.defaultFormatter": "mjmlio.vscode-mjml"
@@ -243,5 +262,10 @@
   },
   "editor.semanticTokenColorCustomizations": {
     "rules": { "variable": "#bfbdb6" }
-  }
+  },
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "Visual Studio 2019 Dark"
 }
