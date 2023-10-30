@@ -206,7 +206,7 @@
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "cSpell.userWords": [
     "apify",
@@ -267,5 +267,8 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "workbench.colorTheme": "Visual Studio 2019 Dark"
+  "workbench.colorTheme": "Visual Studio 2019 Dark",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ]
 }
